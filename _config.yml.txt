@@ -1,0 +1,47 @@
+safe:false
+auto:false
+server:false
+server_port:4000
+baseurl:/jekyll_demo
+             |--　_config.yml
+             |--　_layouts
+             |　　　|--　default.html
+             |--　_posts
+             |　　　|--　2013-11-20-hello-world.html
+             |--　index.html
+url:http://localhost:4000
+
+source:.
+destination:./_site
+plugins:./_plugins
+
+future:true
+lsi:false
+pygments:false
+markdown:maruku
+permalink:date
+
+maruku:
+    use_tex:false
+    use_divs:false
+    use_engine:blathtex
+    png_dir:images/latex
+    png_url:/images/latex
+
+rediscount:
+    extension:[]
+
+kramdown:
+    auto_ids:treu,
+    footnote_nr:1
+    entity_output:as_char
+    toc_levels:1..6
+    use_coderay:false
+
+coderat:
+    caderay_wrap:div
+    caderay_line_numbers:inline
+    caderay_line_numbers_start:1
+    caderay_tab_width:4
+    caderay_bold_every:10
+    caderay_css:style
